@@ -9,15 +9,17 @@ const addSnippet=async(req,res,next)=>{
         if(user==null){
             return res.json({msg:"Please first create user"})
         }
-        const task=await snippetschema.create({categories,keyword,code,scope,description})
+        const task=await snippetschema.create({username,categories,keyword,code,scope,description})
         await usernameschema.findOneAndUpdate(
             { username },
             {
                 $push: {
-                    snippets: { id: task._id },
+                    snippets: { id: task.id },
                 },
             }
             );
+        
+        // console.log()
         res.json({task})
             
     } catch (error) {

@@ -7,14 +7,11 @@ const userSchema = new mongoose.Schema({
     unique: true,
     trim: true,
   },
-  snippets: [
-    {
-      id: {
-        type: String,
-        ref: "snippets",
-      },
-    },
-  ],
+  snippets:{
+    type: Array,
+    default:[]
+  }
+
 });
 
 

@@ -1,4 +1,4 @@
-# Snippet Manager
+# Snippet Search
 
 ## Project Overview
 

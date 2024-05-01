@@ -26,10 +26,6 @@ To run the Snippet Manager locally, follow these steps:
 
 - Node.js and npm installed on your machine.
 
-# Installation
-
-The project builds RESTful APIs using Node.js, Express and Mongoose, ...
-
 ## Manual Installation
 
 Clone the repo:
